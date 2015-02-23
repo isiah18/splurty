@@ -106,3 +106,7 @@ h3 span{
 ::selection{
     background-color: #f84342;
 }
+
+@-ms-viewport{
+  width: device-width;
+}

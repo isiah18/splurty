@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Splurty</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -8,6 +9,8 @@
 </head>
 <body>
 	<header>
+
+<!--Top left logo linked to home page-->
 		<div class="col-xs-3">
 			<%= link_to root_path, :class => 'logo' do %>
 				<div class="circle">
@@ -21,10 +24,12 @@
 			<% end %>
 		</div>
 
+<!--Adds the slogan on the top middle of the page/header-->
 		<div class="col-sm-4 hidden-xs slogan">
 			Splurting out memories from the 90's since 2015.
 		</div>
 
+<!--Adds the Contribute and About links -->
 		<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
 			<!-- Button trigger modal -->
 			<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
@@ -35,7 +40,7 @@
 
 
 
-  <!-- Modal -->
+<!-- Modal for the contribute/add quote-->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -43,6 +48,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4 class="modal-title" id="myModalLabel">Add Memory</h4>
         </div>
+<!--Adds the form to enter saying and author into the Modal -->
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
 				<%= f.input :saying, :label => "What is the saying you want to add?", :placeholder => "You had to use dial-up and netscape to get online." %>
@@ -70,6 +76,7 @@
 			<%= flash[:error].html_safe %>
 		</div>
 	<% end %>
+
 	<%= yield %>
 </div>
 
