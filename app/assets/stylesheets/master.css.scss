@@ -37,7 +37,7 @@
 
 .links a{
 	color:black;
-	font-size: 25px;
+	font-size: 20px;
 	border-bottom: 1px solid #6B3434;
     font-family: "anudawregular", sans-serif;
     font-weight: bold;
@@ -61,6 +61,11 @@ h2{
     font-family: "anudawitalic", sans-serif;
 }
 
+h3{
+     font-family: "anudawitalic", sans-serif;
+     font-size: 20px;
+}
+
 .next-quote{
     color:#F21D1D;
     font-family: "anudawitalic", sans-serif;
@@ -81,4 +86,23 @@ h2{
 
 .about{
         font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+@media (max-width: 750px){
+    .footer-blurb {
+    text-align: left;
+    }
+}
+
+.modal{
+     font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+h3 span{
+    color: #dddddd;
+    font-family: "anudawregular", sans-serif;
+}
+
+::selection{
+    background-color: #f84342;
 }
