@@ -15,6 +15,13 @@ class QuotesController < ApplicationController
 	
 	end
 
+	def show
+		@quote = Quote.where(:id => params[:id]).first
+		if @quote.blank?
+			render :text => 'Sorry no page found!', :status => :not_found
+		end
+	end
+
 
 	private
 
