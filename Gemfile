@@ -41,6 +41,9 @@ gem 'simple_form'
 # Include Autoprefixer
 gem	'autoprefixer-rails'
 
+# Include Factory Girl	
+gem 'factory_girl_rails', "~> 4.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
