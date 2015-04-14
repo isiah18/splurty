@@ -5,6 +5,7 @@ class QuotesControllerTest < ActionController::TestCase
     quote = FactoryGirl.create(:quote)
     get :show, :id => quote.id
     assert_response :success
+    p quote.author
    end
 
    test "show page error" do 
